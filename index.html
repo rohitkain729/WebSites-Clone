@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Home page</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      href="./images/square-image.png"
+      type="image/png"
+      style="width: 10px"
+    />
+  </head>
+  <body>
+    <div class="container-fluid top-header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/amazonblue2.png"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-options">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="nav-return ms-2" style="color: #c0ccab"
+                    >Delivering to Balagat 481001</span
+                  ><br />
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span style="font-weight: 700; font-size: 14px"
+                    >Update location</span
+                  >
+                </a>
+              </li>
+
+              <li class="nav-item mt-auto mb-auto">
+                <form class="d-flex" role="search">
+                  <select
+                    class="form-select-sm w-25 text-body-secondary"
+                    name=""
+                    id=""
+                  >
+                    <option value="0" selected>All</option>
+                  </select>
+                  <input
+                    class="form-control"
+                    type="search"
+                    placeholder="Search Amazon.in"
+                    aria-label="Search"
+                  />
+                  <button class="btn bg-warning search-btn" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </form>
+              </li>
+
+              <li class="nav-item mt-auto mb-auto">
+                <a class="nav-link" aria-disabled="true">
+                  <img
+                    src="./images/Indiaflag.png"
+                    alt=""
+                    class="indiaflag me-1"
+                  />
+                  <select
+                    name=""
+                    id=""
+                    class="form-select-sm lang-input"
+                    style="
+                      background-color: transparent;
+                      color: white;
+                      padding: 0;
+                      margin: 0;
+                      border-radius: 0;
+                    "
+                  >
+                    <option value="0">EN</option>
+                    <option value="1">ARABIC</option>
+                    <option value="1">HINDI</option>
+                  </select>
+                </a>
+              </li>
+
+              <li class="dropdown nav-item">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span class="nav-return">Hello,sign in <br /></span
+                  ><span class="fw-bold" style="font-size: 13px"
+                    >Account & Lists</span
+                  >
+                </a>
+
+                <ul
+                  class="dropdown-menu text-center dropdown-menu-lg-end signin-menu"
+                >
+                  <li>
+                    <button class="dropdown-item" id="signin-btn">
+                      Sign in
+                    </button>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#"
+                      >New Customer?<span class="n-cus-start">Start here</span>
+                    </a>
+                  </li>
+
+                  <li id="last-li"></li>
+
+                  <li id="account-opt">
+                    <div>
+                      <h5>Your Lists</h5>
+                      <a href="">Create a Wish List</a>
+                      <a href="">Wish from any Website</a>
+                      <a href="">Baby Wishlist</a>
+                      <a href="">Discover Your Style</a>
+                    </div>
+                    <div id="partition-list"></div>
+                    <div>
+                      <h5>Your Account</h5>
+                      <a href="">Your Account</a>
+                      <a href="">Your Order</a>
+                      <a href="">Your Wish List</a>
+                      <a href="">Keep Shopping for</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><span class="nav-return">Returns</span> <br />
+                  <span style="font-weight: 700; font-size: 14px"
+                    >& Orders</span
+                  ></a
+                >
+              </li>
+
+              <li class="nav-item mt-auto mb-auto">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    style="font-size: 20px"
+                  ></i>
+                  <span style="color: orange; font-size: 16px">0</span>
+                  <span style="font-weight: 700">Cart</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="middle-navbar">
+        <div><i class="fa-solid fa-bars"></i><span class="ms-1">All</span></div>
+        <div><a href="">MX Player</a></div>
+        <div><a href="">Sell</a></div>
+        <div><a href="">Bestsellers</a></div>
+        <div><a href="">Mobiles</a></div>
+        <div><a href="">Today's Deals</a></div>
+        <div><a href="">Customer Service</a></div>
+        <div><a href="">New Releases</a></div>
+        <div>
+          <select
+            name=""
+            id=""
+            style="background-color: #232f3e"
+            class="text-white border-0"
+          >
+            <option>Prime</option>
+          </select>
+        </div>
+        <div><a href="">Amazon Pay</a></div>
+        <div><a href="">Fashion</a></div>
+        <div><a href="">Electronics</a></div>
+        <div><a href="">Home & Kitchen</a></div>
+        <div><a href="">Computers</a></div>
+        <div><a href="">Books</a></div>
+      </div>
+
+      <div class="add-content">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/add1.jpg" class="d-block w-100" />
+            </div>
+            <div class="carousel-item">
+              <img src="./images/add2.png" class="d-block w-100" />
+            </div>
+            <div class="carousel-item">
+              <img src="./images/add3.jpg" class="d-block w-100" />
+            </div>
+
+            <div class="carousel-item">
+              <img src="./images/add4.jpg" class="d-block w-100" />
+            </div>
+
+            <div class="carousel-item">
+              <img src="./images/add5.jpg" class="d-block w-100" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="card-portion row me-2 ms-2 mt-2 bg-white">
+        <div class="col">
+          <div class="card">
+            <h5>Automotive essentials | Up to 60% off</h5>
+
+            <div class="row row-cols-2 me-1 ms-1 card-add-style">
+              <div class="col">
+                <div class="card">
+                  <img src="./images/card/c1.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <a href="">Cleaning Accessories</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="./images/card/c2.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <a href="">Typre & rim care</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="./images/card/c3.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <a href="">Helmets</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="./images/card/c4.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <a href="">Vaccume cleaner</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <a href="#">See more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <h5>Starting ₹199 | Amazon Brands & more</h5>
+
+            <div class="row row-cols-2 me-1 ms-1 card-add-style">
+              <div class="col">
+                <div class="card">
+                  <img src="./images/card/c11.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <a href="">Starting Rs 199 | Bedsheets</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="./images/card/c12.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <a href="">Starting Rs 199 | Curtains</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="./images/card/c13.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <a href="">Minimum 40% off | Ironing board & more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="./images/card/c14.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <a href="">Upto 60% off | Home decor</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <a href="#">See more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <h5>Starting ₹49 | Deals on home essentials</h5>
+
+            <div class="row row-cols-2 me-1 ms-1 card-add-style">
+              <div class="col">
+                <div class="card">
+                  <img src="./images/card/c21.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <a href="">Cleaning Supplies</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="./images/card/c22.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <a href="">Bathroom accessories</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="./images/card/c23.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <a href="">Home tools</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="./images/card/c24.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <a href="">Wallpapers</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <a href="#">Explore all</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <h5>Revamp your home in style</h5>
+
+            <div class="row row-cols-2 me-1 ms-1 card-add-style">
+              <div class="col">
+                <div class="card">
+                  <img src="./images/card/c31.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <a href="">Cushions covers,bedsheets & more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="./images/card/c32.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <a href="">Figurines,vases & more</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                  <img src="./images/card/c33.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <a href="">Home storage</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="./images/card/c34.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <a href="">Lighting solutions</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <a href="#">Explore all</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carosole-second position-relative">
+        <button class="mt-auto mb-auto fs-5 bg-white border-0 arrow-left-btn">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="d-flex justify-content-center scroll-container">
+          <div>
+            <img src="./images/hor-caro/hc1.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc2.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc3.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc4.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc5.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc6.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc7.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc8.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc9.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc10.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc11.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc12.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc13.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc14.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc15.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc16.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc17.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc18.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc19.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc20.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc21.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc22.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./images/hor-caro/hc223.jpg" alt="" />
+          </div>
+        </div>
+
+        <button class="mt-auto mb-auto fs-5 border-0 arrow-right-btn">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="scroll-card mt-3">
+
+        <div class="card" style="width: 950px;" >
+          <h5 class="card-title mt-2 ms-2 mb-1">Best Sellers in Beauty</h5>
+          <div class="row">
+            <div class="col">
+              <img src="./images/scrll-card/sc-c1.jpg" class="card-img-top" />
+            </div>
+            <div class="col">
+              <img src="./images/scrll-card/sc-c2.jpg" class="card-img-top" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img src="./images/scrll-card/sc-c3.jpg" class="card-img-top" />
+            </div>
+            <div class="col">
+              <img src="./images/scrll-card/sc-c4.jpg" class="card-img-top" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h5 class="card-title mt-2 ms-2 mb-4">
+            Up to 60% off | Best offers on kitchen products from…
+          </h5>
+          <div class="row">
+            <div class="col-3 card-slider-shift">
+              <div id="carousel2" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/scrll-card/ad-carousel/1.jpg"
+                      class="d-block w-100 card-img-top mb-5"
+                    
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/scrll-card/ad-carousel/2.jpg"
+                      class="d-block w-100 card-img-top mb-5"
+                
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/scrll-card/ad-carousel/3.jpg"
+                      class="d-block w-100 card-img-top mb-5"
+                      
+                    />
+                  </div>
+                </div>
+
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel2"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel2"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <p class="card-title">
+              DDN_R_ Shoes Racks for Home || Shoe Organiser For Home || Cloth
+              Organise…
+            </p>
+            <span>₹398.00M.R.P:₹999.00</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h5 class="card-title mt-2 ms-2 mb-4">
+            Up to 60% off | Best offers on kitchen products from…
+          </h5>
+          <div class="row">
+            <div class="col-3 card-slider-shift">
+              <div id="carousel2" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/scrll-card/ad-carousel/1.jpg"
+                      class="d-block w-100 card-img-top mb-5"
+                      
+                      
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/scrll-card/ad-carousel/2.jpg"
+                      class="d-block w-100 card-img-top mb-5"
+                      alt="..."
+                     
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/scrll-card/ad-carousel/3.jpg"
+                      class="d-block w-100 card-img-top mb-5"
+                      alt="..."
+                     
+                    />
+                  </div>
+                </div>
+
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel2"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel2"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <p class="card-title">
+              DDN_R_ Shoes Racks for Home || Shoe Organiser For Home || Cloth
+              Organise…
+            </p>
+            <span>₹398.00M.R.P:₹999.00</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h5 class="card-title mt-2 ms-2 mb-4">
+            Up to 60% off | Best offers on kitchen products from…
+          </h5>
+          <div class="row">
+            <div class="col-3 card-slider-shift">
+              <div id="carousel2" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/scrll-card/ad-carousel/1.jpg"
+                      class="d-block w-100 card-img-top mb-5"
+                      
+                      
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/scrll-card/ad-carousel/2.jpg"
+                      class="d-block w-100 card-img-top mb-5"
+                      alt="..."
+                     
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/scrll-card/ad-carousel/3.jpg"
+                      class="d-block w-100 card-img-top mb-5"
+                      alt="..."
+                     
+                    />
+                  </div>
+                </div>
+
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel2"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel2"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <p class="card-title">
+              DDN_R_ Shoes Racks for Home || Shoe Organiser For Home || Cloth
+              Organise…
+            </p>
+            <span>₹398.00M.R.P:₹999.00</span>
+          </div>
+        </div>
+
+        
+      </div>
+
+      <br /><br /><br />
+      <br /><br /><br />
+      <br /><br /><br />
+
+       <div class="footer">
+        <div class="footer-top">Back to top</div>
+
+        <div class="footer-middle">
+          <div>
+            <span>Get to Know Us</span>
+            <a href="">About Amazon</a>
+            <a href="">Careers</a>
+            <a href="">Press Releases</a>
+            <a href="">Amazon Science</a>
+          </div>
+          <div>
+            <span>Connect with Us</span>
+            <a href="">Facebook</a>
+            <a href="">Twitter</a>
+            <a href="">Instagram</a>
+          </div>
+          <div>
+            <span>Make Money with Us</span>
+            <a href="">Sell on Amazon</a>
+            <a href=""
+              >Sell under Amazon <br />
+              Accelerator</a
+            >
+            <a href="">Protect and Build Your Brand</a>
+            <a href="">Amazon Global Selling</a>
+            <a href="">Supply to Amazon</a>
+            <a href="">Become an Affiliate</a>
+            <a href="">Fulfilment by Amazon</a>
+            <a href="">Advertise Your Products</a>
+            <a href="">Amazon Pay on Merchants</a>
+          </div>
+          <div>
+            <span>Let Us Help You</span>
+            <a href="">Your Account</a>
+            <a href="">Returns Centre</a>
+            <a href=""
+              >Recalls and Product Safety <br />
+              Alerts</a
+            >
+            <a href="">100% Purchase Protection</a>
+            <a href="">Amazon App Download</a>
+            <a href="">Help</a>
+          </div>
+        </div>
+
+        <div class="footer-second-last">
+          <img src="./images/amazonblue2.png" alt="" />
+          <div class="footer-flag">
+            <div>
+              <select name="" id="">
+                <option value="">
+                  <i class="fa-solid fa-globe" style="color: #c1cccc"></i
+                  >English
+                </option>
+              </select>
+            </div>
+            <div style="border: 1px solid #8d9096; padding: 5px">
+              <img src="./images/Indiaflag.png" style="height: 13px" />
+              <span style="color: #c1cccc" class="me-1 border-1">India</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div></div>
+      </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./JS/index.js"></script>
+  </body>
+</html>
